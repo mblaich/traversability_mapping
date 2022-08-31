@@ -21,7 +21,7 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/core/eigen.hpp>
 
-#include <opencv/cv.h>
+#include <opencv2/opencv.hpp>
 #include <cv_bridge/cv_bridge.h>
 #include <image_transport/image_transport.h>
 
@@ -70,7 +70,7 @@ typedef struct kdtree kdtree_t;
 typedef struct kdres kdres_t;
 
 // Environment
-extern const bool urbanMapping = true;
+extern const bool urbanMapping = false;
 
 // VLP-16
 extern const int N_SCAN = 16;
